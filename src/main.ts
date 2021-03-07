@@ -30,9 +30,7 @@ function main(): void
 			},
 			{
 				name: "known_hosts",
-				contents: insertLf(core.getInput("known_hosts", {
-					required: true,
-				}), true, true),
+				contents: insertLf(core.getInput("known_hosts"), true, true),
 				options: {
 					mode: 0o644,
 					flag: "a",
